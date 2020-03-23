@@ -88,7 +88,68 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\ajax-loader.gif" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\aos.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Content\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Content\css\flaticon.css" />
+    <Content Include="Content\css\icomoon.css" />
+    <Content Include="Content\css\ionicons.min.css" />
+    <Content Include="Content\css\magnific-popup.css" />
+    <Content Include="Content\css\mixins\_text-hide.css" />
+    <Content Include="Content\css\open-iconic-bootstrap.min.css" />
+    <Content Include="Content\css\owl.carousel.min.css" />
+    <Content Include="Content\css\owl.theme.default.min.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\about.jpg" />
+    <Content Include="Content\images\bg_1.jpg" />
+    <Content Include="Content\images\bg_1.png" />
+    <Content Include="Content\images\bg_2.png" />
+    <Content Include="Content\images\image_1.jpg" />
+    <Content Include="Content\images\image_2.jpg" />
+    <Content Include="Content\images\image_3.jpg" />
+    <Content Include="Content\images\loc.png" />
+    <Content Include="Content\images\person_1.jpg" />
+    <Content Include="Content\images\person_2.jpg" />
+    <Content Include="Content\images\person_3.jpg" />
+    <Content Include="Content\images\person_4.jpg" />
+    <Content Include="Content\images\project-1.jpg" />
+    <Content Include="Content\images\project-2.jpg" />
+    <Content Include="Content\images\project-3.jpg" />
+    <Content Include="Content\images\project-4.jpg" />
+    <Content Include="Content\images\project-5.jpg" />
+    <Content Include="Content\images\project-6.jpg" />
+    <Content Include="Content\images\staff-1.jpg" />
+    <Content Include="Content\images\staff-2.jpg" />
+    <Content Include="Content\images\staff-3.jpg" />
+    <Content Include="Content\images\staff-4.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Fonts\flaticon\backup.txt" />
+    <Content Include="Fonts\flaticon\font\flaticon.css" />
+    <Content Include="Fonts\flaticon\font\flaticon.html" />
+    <Content Include="Fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Fonts\icomoon\icomoon.svg" />
+    <Content Include="Fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="Fonts\open-iconic\open-iconic.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\aos.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\google-map.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-migrate-3.0.1.min.js" />
+    <Content Include="Scripts\jquery.animateNumber.min.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.stellar.min.js" />
+    <Content Include="Scripts\jquery.waypoints.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\scrollax.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,7 +162,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="Fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="Fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="Fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="Fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="Fonts\flaticon\license\license.pdf" />
+    <Content Include="Fonts\icomoon\icomoon.eot" />
+    <Content Include="Fonts\icomoon\icomoon.ttf" />
+    <Content Include="Fonts\icomoon\icomoon.woff" />
+    <Content Include="Fonts\ionicons\css\_ionicons.scss" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.woff2" />
+    <Content Include="Fonts\open-iconic\open-iconic.eot" />
+    <Content Include="Fonts\open-iconic\open-iconic.otf" />
+    <Content Include="Fonts\open-iconic\open-iconic.ttf" />
+    <Content Include="Fonts\open-iconic\open-iconic.woff" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,7 +192,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
