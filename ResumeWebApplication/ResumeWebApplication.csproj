@@ -175,6 +175,10 @@
     <Compile Include="Migrations\202003231704253_Initial.designer.cs">
       <DependentUpon>202003231704253_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003241637042_OrderAddedToMenuAndSomeChanges.cs" />
+    <Compile Include="Migrations\202003241637042_OrderAddedToMenuAndSomeChanges.designer.cs">
+      <DependentUpon>202003241637042_OrderAddedToMenuAndSomeChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -214,6 +218,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202003231704253_Initial.resx">
       <DependentUpon>202003231704253_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003241637042_OrderAddedToMenuAndSomeChanges.resx">
+      <DependentUpon>202003241637042_OrderAddedToMenuAndSomeChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
