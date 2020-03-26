@@ -110,28 +110,46 @@
     <Content Include="Content\css\owl.carousel.min.css" />
     <Content Include="Content\css\owl.theme.default.min.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\Fonts\flaticon\backup.txt" />
+    <Content Include="Content\Fonts\flaticon\font\flaticon.css" />
+    <Content Include="Content\Fonts\flaticon\font\flaticon.html" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Content\Fonts\icomoon\icomoon.svg" />
+    <Content Include="Content\Fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.svg" />
     <Content Include="Content\images\about.jpg" />
     <Content Include="Content\images\bg_1.jpg" />
     <Content Include="Content\images\bg_1.png" />
     <Content Include="Content\images\bg_2.png" />
+    <Content Include="Content\images\bolgezysitedesign.png" />
+    <Content Include="Content\images\booksite.png" />
+    <Content Include="Content\images\development.png" />
     <Content Include="Content\images\image_1.jpg" />
     <Content Include="Content\images\image_2.jpg" />
     <Content Include="Content\images\image_3.jpg" />
+    <Content Include="Content\images\jobdesign.png" />
     <Content Include="Content\images\loc.png" />
+    <Content Include="Content\images\onetechsitedesign.png" />
     <Content Include="Content\images\person_1.jpg" />
     <Content Include="Content\images\person_2.jpg" />
     <Content Include="Content\images\person_3.jpg" />
     <Content Include="Content\images\person_4.jpg" />
+    <Content Include="Content\images\pngfuel.com.png" />
+    <Content Include="Content\images\pngfuel.png" />
     <Content Include="Content\images\project-1.jpg" />
     <Content Include="Content\images\project-2.jpg" />
     <Content Include="Content\images\project-3.jpg" />
     <Content Include="Content\images\project-4.jpg" />
     <Content Include="Content\images\project-5.jpg" />
     <Content Include="Content\images\project-6.jpg" />
+    <Content Include="Content\images\signupdesignforpc.png" />
+    <Content Include="Content\images\siteproblemfix.png" />
     <Content Include="Content\images\staff-1.jpg" />
     <Content Include="Content\images\staff-2.jpg" />
     <Content Include="Content\images\staff-3.jpg" />
     <Content Include="Content\images\staff-4.jpg" />
+    <Content Include="Content\images\testyourselfsitedesign.png" />
     <Content Include="favicon.ico" />
     <Content Include="Fonts\flaticon\backup.txt" />
     <Content Include="Fonts\flaticon\font\flaticon.css" />
@@ -161,10 +179,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FooterServicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenusController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ResumesController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\SkillsController.cs" />
     <Compile Include="Data\Author.cs" />
     <Compile Include="Data\Menu.cs" />
     <Compile Include="Data\Project.cs" />
+    <Compile Include="Data\Resume.cs" />
     <Compile Include="Data\ResumeDbContext.cs" />
     <Compile Include="Data\Service.cs" />
     <Compile Include="Data\Skill.cs" />
@@ -178,6 +203,22 @@
     <Compile Include="Migrations\202003241637042_OrderAddedToMenuAndSomeChanges.cs" />
     <Compile Include="Migrations\202003241637042_OrderAddedToMenuAndSomeChanges.designer.cs">
       <DependentUpon>202003241637042_OrderAddedToMenuAndSomeChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003241835000_SomeFixesAndNewAddedThings.cs" />
+    <Compile Include="Migrations\202003241835000_SomeFixesAndNewAddedThings.designer.cs">
+      <DependentUpon>202003241835000_SomeFixesAndNewAddedThings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003251226162_ResumeAdded.cs" />
+    <Compile Include="Migrations\202003251226162_ResumeAdded.designer.cs">
+      <DependentUpon>202003251226162_ResumeAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003251230132_ChangeOnResume.cs" />
+    <Compile Include="Migrations\202003251230132_ChangeOnResume.designer.cs">
+      <DependentUpon>202003251230132_ChangeOnResume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003251258123_someChanges.cs" />
+    <Compile Include="Migrations\202003251258123_someChanges.designer.cs">
+      <DependentUpon>202003251258123_someChanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -202,8 +243,32 @@
     <Content Include="Fonts\open-iconic\open-iconic.otf" />
     <Content Include="Fonts\open-iconic\open-iconic.ttf" />
     <Content Include="Fonts\open-iconic\open-iconic.woff" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="Content\Fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="Content\Fonts\flaticon\license\license.pdf" />
+    <Content Include="Content\Fonts\icomoon\icomoon.eot" />
+    <Content Include="Content\Fonts\icomoon\icomoon.ttf" />
+    <Content Include="Content\Fonts\icomoon\icomoon.woff" />
+    <Content Include="Content\Fonts\ionicons\css\_ionicons.scss" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.woff2" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.eot" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.otf" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.ttf" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.woff" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Menus\AllMenus.cshtml" />
+    <Content Include="Views\Services\AllServices.cshtml" />
+    <Content Include="Views\Skills\AllSkills.cshtml" />
+    <Content Include="Views\Projects\AllProjects.cshtml" />
+    <Content Include="Views\FooterServices\AllFooterServices.cshtml" />
+    <Content Include="Views\Resumes\AllResumes.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -214,6 +279,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202003231704253_Initial.resx">
@@ -221,6 +287,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003241637042_OrderAddedToMenuAndSomeChanges.resx">
       <DependentUpon>202003241637042_OrderAddedToMenuAndSomeChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003241835000_SomeFixesAndNewAddedThings.resx">
+      <DependentUpon>202003241835000_SomeFixesAndNewAddedThings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003251226162_ResumeAdded.resx">
+      <DependentUpon>202003251226162_ResumeAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003251230132_ChangeOnResume.resx">
+      <DependentUpon>202003251230132_ChangeOnResume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003251258123_someChanges.resx">
+      <DependentUpon>202003251258123_someChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

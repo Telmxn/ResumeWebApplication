@@ -1,0 +1,10 @@
+﻿@model List<ResumeWebApplication.Data.Resume>
+@foreach (var resume in Model)
+{
+    <div class="resume-wrap ftco-animate">
+        <span class="date">@resume.StartDate.ToString("yyyy") - @resume.EndDate.ToString("yyyy")</span>
+        <h2>@resume.WorkName</h2>
+        <span class="position">@resume.WorkPlace</span>
+        <p class="mt-4">@resume.About</p>
+    </div>
+}

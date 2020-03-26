@@ -7,18 +7,18 @@ using System.Web.Mvc;
 
 namespace ResumeWebApplication.Controllers
 {
-    public class HomeController : Controller
+    public class ProjectsController : Controller
     {
         private readonly ResumeDbContext _resumeDbContext;
-        public HomeController()
+        public ProjectsController()
         {
             _resumeDbContext = new ResumeDbContext();
         }
-        // GET: Home
-        public ActionResult Index()
+        // GET: Projects
+        public ActionResult AllProjects()
         {
-            var author = _resumeDbContext.Authors.Where(x => x.Id == 1).FirstOrDefault();
-            return View(author);
+            var projects = _resumeDbContext.Projects.ToList();
+            return View(projects);
         }
     }
 }

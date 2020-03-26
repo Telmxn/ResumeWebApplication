@@ -1,0 +1,15 @@
+﻿@model List<ResumeWebApplication.Data.Service>
+    
+    @foreach(var service in Model)
+    {
+        <div class="col-md-4 text-center d-flex ftco-animate">
+            <a href="#" class="services-1" style="height:300px">
+                <span class="icon">
+                    <img alt="Logo" style="width:50%" src="../Content/images/@service.LogoPath" />
+                </span>
+                <div class="desc">
+                    <h3 class="mb-5">@service.Name</h3>
+                </div>
+            </a>
+        </div>
+    }

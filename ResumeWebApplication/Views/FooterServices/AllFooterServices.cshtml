@@ -1,0 +1,7 @@
+﻿@model List<ResumeWebApplication.Data.Service>
+    <ul class="list-unstyled">
+        @foreach (var service in Model)
+        {
+            <li><a href="#Services-section"><span class="icon-long-arrow-right mr-2"></span>@service.Name</a></li>
+        }
+    </ul>

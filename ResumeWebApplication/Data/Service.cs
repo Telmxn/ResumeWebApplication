@@ -14,6 +14,6 @@ namespace ResumeWebApplication.Data
         [Required]
         public string LogoPath { get; set; }
         public Author Author { get; set; }
-        public int AuhtorId { get; set; }
+        public int AuthorId { get; set; }
     }
 }

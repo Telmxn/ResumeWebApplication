@@ -14,5 +14,6 @@ namespace ResumeWebApplication.Data
         public DbSet<Project> Projects { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Resume> Resumes { get; set; }
     }
 }

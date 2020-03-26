@@ -7,18 +7,18 @@ using System.Web.Mvc;
 
 namespace ResumeWebApplication.Controllers
 {
-    public class HomeController : Controller
+    public class MenusController : Controller
     {
         private readonly ResumeDbContext _resumeDbContext;
-        public HomeController()
+        public MenusController()
         {
             _resumeDbContext = new ResumeDbContext();
         }
-        // GET: Home
-        public ActionResult Index()
+        // GET: Menus
+        public PartialViewResult AllMenus()
         {
-            var author = _resumeDbContext.Authors.Where(x => x.Id == 1).FirstOrDefault();
-            return View(author);
+            var menus = _resumeDbContext.Menus.Where(x=>x.IsActive==true).ToList();
+            return PartialView(menus);
         }
     }
 }

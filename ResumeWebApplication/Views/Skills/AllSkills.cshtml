@@ -1,0 +1,15 @@
+﻿@model List<ResumeWebApplication.Data.Skill>
+@foreach (var skill in Model)
+{
+    <div class="col-md-6 animate-box">
+        <div class="progress-wrap ftco-animate">
+            <h3>@skill.Name</h3>
+            <div class="progress">
+                <div class="progress-bar color-1" role="progressbar" aria-valuenow="@skill.Percent"
+                     aria-valuemin="0" aria-valuemax="100" style="width:@skill.Percent%">
+                    <span>@skill.Percent%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+}
