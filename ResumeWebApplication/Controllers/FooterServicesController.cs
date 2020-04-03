@@ -17,10 +17,9 @@ namespace ResumeWebApplication.Controllers
             _resumeDbContext = new ResumeDbContext();
         }
         // GET: FooterServices
-        [ActionName("AllFooterServices")]
-        public async Task<PartialViewResult> AllFooterServicesAsync()
+        public PartialViewResult AllFooterServices()
         {
-            var footerServices = await _resumeDbContext.Services.ToListAsync();
+            var footerServices = _resumeDbContext.Services.ToList();
             return PartialView(footerServices);
         }
     }

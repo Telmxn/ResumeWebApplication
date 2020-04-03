@@ -17,9 +17,9 @@ namespace ResumeWebApplication.Controllers
             _resumeDbContext = new ResumeDbContext();
         }
         // GET: Projects
-        public async Task<ActionResult> AllProjectsAsync()
+        public ActionResult AllProjects()
         {
-            var projects = await _resumeDbContext.Projects.ToListAsync();
+            var projects = _resumeDbContext.Projects.ToList();
             return View(projects);
         }
     }
