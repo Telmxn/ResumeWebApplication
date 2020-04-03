@@ -1,7 +1,9 @@
 ﻿using ResumeWebApplication.Data;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -15,9 +17,9 @@ namespace ResumeWebApplication.Controllers
             _resumeDbContext = new ResumeDbContext();
         }
         // GET: Projects
-        public ActionResult AllProjects()
+        public async Task<ActionResult> AllProjectsAsync()
         {
-            var projects = _resumeDbContext.Projects.ToList();
+            var projects = await _resumeDbContext.Projects.ToListAsync();
             return View(projects);
         }
     }

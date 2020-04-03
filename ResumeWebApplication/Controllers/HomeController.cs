@@ -1,7 +1,9 @@
 ﻿using ResumeWebApplication.Data;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -15,9 +17,10 @@ namespace ResumeWebApplication.Controllers
             _resumeDbContext = new ResumeDbContext();
         }
         // GET: Home
-        public ActionResult Index()
+        [ActionName("Index")]
+        public async Task<ActionResult> IndexAsync()
         {
-            var author = _resumeDbContext.Authors.Where(x => x.Id == 1).FirstOrDefault();
+            var author = await _resumeDbContext.Authors.Where(x => x.Id == 1).FirstOrDefaultAsync();
             return View(author);
         }
     }

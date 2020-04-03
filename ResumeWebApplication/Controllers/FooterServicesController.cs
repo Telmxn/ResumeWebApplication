@@ -1,7 +1,9 @@
 ﻿using ResumeWebApplication.Data;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -15,9 +17,10 @@ namespace ResumeWebApplication.Controllers
             _resumeDbContext = new ResumeDbContext();
         }
         // GET: FooterServices
-        public PartialViewResult AllFooterServices()
+        [ActionName("AllFooterServices")]
+        public async Task<PartialViewResult> AllFooterServicesAsync()
         {
-            var footerServices = _resumeDbContext.Services.ToList();
+            var footerServices = await _resumeDbContext.Services.ToListAsync();
             return PartialView(footerServices);
         }
     }
